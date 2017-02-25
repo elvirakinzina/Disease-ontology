@@ -1,3 +1,4 @@
+import multiprocessing
 import requests
 import json
 
@@ -57,5 +58,9 @@ def parse(text):
 
 
 def lookup(text):
-    for t in parse(text):
-        yield json.dumps(search(t))
+    pool = multiprocessing.Pool(15)
+
+    results = pool.map(search, parse(text))
+
+    for r in results:
+        yield json.dumps(r)
