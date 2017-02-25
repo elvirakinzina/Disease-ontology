@@ -45,9 +45,13 @@ def search_doid(query, exact, doids):
 
 def search(query):
     doids = set()
-    doid_results = search_doid(query, False, doids)
-    other_results = search_others(query, doids)
-    return {'query': query, 'top_matches': doid_results, 'synonym_matches': other_results}
+    doid_exact_results = search_doid(query, True, doids)
+    if (len(doid_exact_results)>0):
+        return {'query': query, 'exact_matches': doid_exact_results}
+    else:
+        doid_results = search_doid(query, False, doids)
+        other_results = search_others(query, doids)
+        return {'query': query, 'top_matches': doid_results, 'synonym_matches': other_results}
 
 
 def parse(text):
