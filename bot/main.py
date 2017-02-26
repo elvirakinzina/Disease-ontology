@@ -14,7 +14,7 @@ def start(bot, update):
 
 
 def help(bot, update):
-    update.message.reply_text('Please, insert your query in the following format: \n# Reason for admission: Cardiomyopathy \n# Acute infarction (localization): no \n# Former infarction (localization): no \n# Additional diagnoses: Hypertrophic obstructive cardiomyopathy')
+    update.message.reply_text('Please, insert your query in the following format: \n# Reason for admission: Cardiomyopathy \n# Acute infarction (localization): no \n# Former infarction (localization): no \n# Additional diagnoses: Hypertrophic obstructive cardiomyopathy \n or simply insert your diagnostic term such as \"aortic tenosis\"')
 
 
 def process(bot, update):
