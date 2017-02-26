@@ -51,12 +51,13 @@ def search_doid(query, exact, doids):
 def search(query):
     doids = set()
     doid_exact_results = search_doid(query, True, doids)
-    if (len(doid_exact_results)>0):
-        return (str(query) +  ' ' + doid_exact_results[0]['id'] + ' ' + doid_exact_results[0]['label'] + ' - exact match')
+    if (len(doid_exact_results) > 0):
+        return {'query': query, 'exact_matches': doid_exact_results}
     else:
-        doid_results = search_doid(query, False, doids)
-        other_results = search_others(query, doids)
-        return {'query': query, 'top_matches': doid_results, 'synonym_matches': other_results}
+        return {}
+        # doid_results = search_doid(query, False, doids)
+        # other_results = search_others(query, doids)
+        # return {'query': query, 'top_matches': doid_results, 'synonym_matches': other_results}
 
 
 def parse(text):
@@ -66,15 +67,34 @@ def parse(text):
         # test data format
         def getTerms(line):
             return list(map(lambda s: s.strip(), line.split(':')[1].split(',')))
-        return getTerms(lines[0]) + getTerms(lines[3])
+        reason = getTerms(lines[0])
+        additional = getTerms(lines[3])
     else:
-        return [text]
+        reason = [text]
+        additional = []
+    return {'reason': reason, 'additional': additional}
+
+
+def format_response(r):
+    s = r['query'] + "\n"
+
+    if 'exact_matches' in r:
+        s += ("Exact match\n"
+               "Name: {0}\n"
+               "# {1}").format(r['exact_matches'][0]['label'], r['exact_matches'][0]['id'])
+    else:
+        s += "Best fuzzy match\n"
+
+    return s
 
 
 def lookup(text):
     pool = multiprocessing.Pool(15)
 
-    results = pool.map(search, parse(text))
+    parsed = parse(text)
+    strings = parsed['reason'] + parsed['additional']
 
-    for r in results:
-        yield json.dumps(r)
+    results = pool.map(search, strings)
+
+    for i in range(len(results)):
+        yield format_response(results[i])
