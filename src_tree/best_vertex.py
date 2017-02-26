@@ -29,7 +29,6 @@ def numerate(doid,ontology):
     term = ontology.get_term(doid)
     if len(term.name) > 0 and check_parent(doid,ontology) > 0:
         dict = {term.name: term.id for term in ontology.get_terms()}
-        print(term.relationships)
         father = dict[term.relationships[0][2].lower()]
         numerate(father,ontology)
     
