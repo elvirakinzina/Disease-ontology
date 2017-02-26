@@ -47,7 +47,7 @@ def search(query):
     doids = set()
     doid_exact_results = search_doid(query, True, doids)
     if (len(doid_exact_results)>0):
-        return {'query': query, 'exact_matches': doid_exact_results}
+        return (str(query) +  ' ' + doid_exact_results[0]['id'] + ' ' + doid_exact_results[0]['label'] + ' - exact match')
     else:
         doid_results = search_doid(query, False, doids)
         other_results = search_others(query, doids)
