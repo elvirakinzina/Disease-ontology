@@ -22,27 +22,30 @@ def find_number_ancestors(doid, index,ontology):
         index = find_number_ancestors(father, index+1,ontology)   
     return index
 
-def numerate(doid,ontology):
+def numerate(doid,ontology,p):
     #take integer number of a doid
     n = ontology.terms.keys().index(doid)
-    res[n] += 1
+    res[n] += p
     term = ontology.get_term(doid)
     if len(term.name) > 0 and check_parent(doid,ontology) > 0:
         dict = {term.name: term.id for term in ontology.get_terms()}
         father = dict[term.relationships[0][2].lower()]
-        numerate(father,ontology)
+        numerate(father,ontology,p)
     
-def numerate_tree(list_of_doids,ontology):
-    for v in list_of_doids:
-        numerate(v,ontology)
+def numerate_tree(list_of_doids,ontology,p):
+    for i, v in enumerate(list_of_doids):
+        numerate(v,ontology,p[i])
         
-def find_best_vertex(list_of_doids,ontology):
+def find_best_vertex(list_of_doids,ontology,p=None):
+    if p is None:
+        p = np.ones(len(list_of_doids))
+        
     if len(list_of_doids) > 0:
         N = len(ontology.terms.keys())
         global res
         res = np.zeros(N)
-        numerate_tree(list_of_doids,ontology)
-        index = np.where(res>0.5*len(list_of_doids))
+        numerate_tree(list_of_doids,ontology,p)
+        index = np.where(res>0.5*p.sum())
         doids = [None] * len(index[0])
         ancestors = [None] * len(index[0])
         for i in range(len(index[0])):
