@@ -1,4 +1,4 @@
-from dependencies.scripts.oboparser import parse
+from disease_ontology.scripts.oboparser import parse
 
 def get_ontology(filename):
     '''Load ontology, lower-case name and rename single non-ascii disease'''
