@@ -10,11 +10,11 @@ logger = logging.getLogger(__name__)
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
 def start(bot, update):
-    update.message.reply_text('Hi!')
+    update.message.reply_text('Disease Ontology Mapping Bot is a tool for standardization of terms in medical diagnosis. \nVisit https://github.com/elliekinz/Disease-ontology for details.')
 
 
 def help(bot, update):
-    update.message.reply_text('Help!')
+    update.message.reply_text('Please, insert your query in the following format: \n# Reason for admission: Cardiomyopathy \n# Acute infarction (localization): no \n# Former infarction (localization): no \n# Additional diagnoses: Hypertrophic obstructive cardiomyopathy')
 
 
 def process(bot, update):
