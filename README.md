@@ -8,4 +8,14 @@ The exact scheme of work is represented in the picture below.
 ![alt text](https://github.com/elliekinz/Disease-ontology/blob/master/images/Scheme.png)
 
 # Usage
-You can find examples to check the bot on in the data folder or simply type any medical diagnostic term for example, "aortic stenosis".
+You can find examples to check the bot on in the data folder. It would look like this:
+
+`#` Reason for admission: Cardiomyopathy
+
+`#` Acute infarction (localization): no
+
+`#` Former infarction (localization): no
+
+`#` Additional diagnoses: Hypertrophic obstructive cardiomyopathy
+
+Or simply type any medical diagnostic term, for example, "aortic stenosis".
