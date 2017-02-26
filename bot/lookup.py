@@ -4,7 +4,7 @@ import json
 from wiki_pubmed_fuzzy.ontology import get_ontology
 
 
-TREE = get_ontology("../data/doid.obo")
+# TREE = get_ontology("../data/doid.obo")
 
 
 def request_synonyms(oid, iri):
@@ -60,10 +60,15 @@ def search(query):
 
 
 def parse(text):
-    lines = list(text.split('\n'))
-    def getTerms(line):
-        return list(map(lambda s: s.strip(), line.split(':')[1].split(',')))
-    return getTerms(lines[0]) + getTerms(lines[3])
+    lines = list(l.strip() for l in text.split('\n') if len(l.strip()) > 0)
+
+    if len(lines) == 4 and all(l.startswith('#') for l in lines):
+        # test data format
+        def getTerms(line):
+            return list(map(lambda s: s.strip(), line.split(':')[1].split(',')))
+        return getTerms(lines[0]) + getTerms(lines[3])
+    else:
+        return [text]
 
 
 def lookup(text):
