@@ -1,6 +1,11 @@
 import multiprocessing
 import requests
 import json
+from wiki_pubmed_fuzzy.ontology import get_ontology
+
+
+TREE = get_ontology("../data/doid.obo")
+
 
 def request_synonyms(oid, iri):
     j = requests.get('http://www.ebi.ac.uk/ols/api/ontologies/' + oid + '/terms?iri=' + iri).json()

@@ -5,7 +5,6 @@ from lookup import *
 TOKEN='331304045:AAGVjGkL-11ysUPoSTk-EStFTNB93s00Gxw'
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-
 logger = logging.getLogger(__name__)
 
 # Define a few command handlers. These usually take the two arguments bot and
