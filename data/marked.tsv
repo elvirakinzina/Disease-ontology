@@ -1,0 +1,17 @@
+#file   phrase  ID  Comments
+s0316lre.txt    Myocardial infarction   DOID:5844   exact match
+s0316lre.txt    Hyperlipoproteinemia Type IV b  DOID:1172   Addition of `b' doesn't narrow class in DOID
+s0316lre.txt    Diabetes mellitus   DOID:9351   No type information in phrase
+s0316lre.txt    Peripheral atherosclerosis  DOID:1936   No specific class for peripheral
+s0316lre.txt    Arterial hypertension   DOID:10763  Arterial doesn't narrow the class
+s0316lre.txt    Cerebral stroke     No entry for stroke in DOID, ther eis an entry from HPO HP:0001297
+s0316lre.txt    Colon cancer    DOID:219    exact match
+s0508_re.txt    Myocarditis DOID:820    exact match
+s0508_re.txt    Bundle branch block DOID:10273  We don't have information about if this left or right block, parent specifying heart conduction disease can be chosen
+s0542_re.txt    Myocardial infarction   DOID:5844   exact match
+s0542_re.txt    Atrial fibrillation DOID:0060224    exact match
+s0542_re.txt    Ventricular tachycardias        There is a match in HPO HP:0004756, we can not assign parent class from DOID
+s0449_re.txt    Myocardial infarction   DOID:5844   exact match
+s0449_re.txt    Prosthetic aortic valve     There is a term in UBERON UBERON:000213, probably prostetic is a special word
+s0449_re.txt    Arterial hypertension   DOID:10763  Arterial doesn't narrow the class
+s0449_re.txt    Mitral regurgitation        There is HPO exact match HP:0001653

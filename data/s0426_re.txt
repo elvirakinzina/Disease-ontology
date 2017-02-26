@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): inferior
+# Additional diagnoses: Bundle branch block, Asthma bronchiale

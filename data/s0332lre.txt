@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): antero-lateral
+# Additional diagnoses: Recurrent ventricular tachycardia, ACVB (RIVA)

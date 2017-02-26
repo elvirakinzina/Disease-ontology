@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): anterior
+# Former infarction (localization): no
+# Additional diagnoses: Rheumatoid arthritis,Hyperlipoproteinemia Type IV

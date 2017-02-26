@@ -1,0 +1,4 @@
+# Reason for admission: Cardiomyopathy
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Hypertropic obstructive cardiomyopathy (intraventricular gradient 70mmHg)

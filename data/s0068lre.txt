@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): inferior
+# Former infarction (localization): no
+# Additional diagnoses: Hypercholesterinemia

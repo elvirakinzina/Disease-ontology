@@ -1,0 +1,4 @@
+# Reason for admission: Cardiomyopathy
+# Acute infarction (localization): no
+# Former infarction (localization): unknown
+# Additional diagnoses: Atrial fibrillation, Hypertropic cardiomyopathy

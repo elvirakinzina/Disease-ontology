@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): antero-septo-lateral
+# Former infarction (localization): anterior
+# Additional diagnoses: Coronary artery disease

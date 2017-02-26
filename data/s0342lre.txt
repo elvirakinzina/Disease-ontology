@@ -1,0 +1,4 @@
+# Reason for admission: Cardiomyopathy
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Heart failure (NYHA 3), Hypertrophic obstructive cardiomyopathy (intraventricular gradient 100-160mmHg)

@@ -1,0 +1,4 @@
+# Reason for admission: Dysrhythmia
+# Acute infarction (localization): no
+# Former infarction (localization): unknown
+# Additional diagnoses: Palpitation, Arterial hypertension

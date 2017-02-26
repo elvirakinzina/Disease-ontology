@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): antero-septal ?
+# Additional diagnoses: Pericardial effusion, Diabetes mellitus, Renal insufficiency, Dialysis, Arterial hypertension, Hyperlipoproteinemia, Peripheral atherosclerosis

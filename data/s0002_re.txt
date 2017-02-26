@@ -1,0 +1,4 @@
+# Reason for admission: Unstable angina
+# Acute infarction (localization): no
+# Former infarction (localization): unknown
+# Additional diagnoses: Arterial hypertension, Recurrent pulmonary oedema, Diabetes mellitus, Hyperlipoproteinemia

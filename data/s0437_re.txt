@@ -1,0 +1,4 @@
+# Reason for admission: Cardiomyopathy
+# Acute infarction (localization): no
+# Former infarction (localization): unknown
+# Additional diagnoses: Coronary artery disease, Postop. ACVB (3x), Dilated cardiomyopathy, Bundle branch block

@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-posterior
+# Former infarction (localization): no
+# Additional diagnoses: Peripheral atherosclerosis, Cerebral stroke, COLD

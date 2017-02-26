@@ -1,0 +1,4 @@
+# Reason for admission: Dysrhythmia
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Atrial fibrillation, Obesity

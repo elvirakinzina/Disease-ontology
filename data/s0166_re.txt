@@ -1,0 +1,4 @@
+# Reason for admission: Stable angina
+# Acute infarction (localization): no
+# Former infarction (localization): unknown
+# Additional diagnoses: Coronary heart disease, Arterial Hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IIa, Aortic stenosis (mild), Obesity

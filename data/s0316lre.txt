@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-lateral
+# Former infarction (localization): anterior (1), anterior (2)
+# Additional diagnoses: Hyperlipoproteinemia Type IV b, Diabetes mellitus, Peripheral atherosclerosis, Arterial hypertension, Cerebral stroke, Colon cancer

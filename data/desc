@@ -1,0 +1,4 @@
+URI: https://www.physionet.org/physiobank/database/ptbdb/
+Header: The PTB Diagnostic ECG Database
+Contents: Header files with clinical info for compilation of digitized ECGs for research, algorithmic benchmarking or teaching purposes to the users of PhysioNet. The ECGs were collected from healthy volunteers and patients with different heart diseases.
+

@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): inferior
+# Former infarction (localization): infero-lateral
+# Additional diagnoses: Arterial hypertension, Hyperlipemia, Peripheral atherosclerosis, Hyperuricemia, M. Basedow, Colon cancer

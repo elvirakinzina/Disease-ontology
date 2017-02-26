@@ -1,0 +1,4 @@
+# Reason for admission: Cardiomyopathy
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Recurrent pulmonary oedema, Hypertrophic obstructive cardiomyopathy (intraventricular gradient 70-90mmHg), Hyperlipoproteinemia, Diabetes mellitus, Obesity

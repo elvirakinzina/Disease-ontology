@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): infero-posterior (1), inferior (2)
+# Additional diagnoses: Arterial Hypertension, Peripheral atherosclerosis, Hyperlipoproteinemia

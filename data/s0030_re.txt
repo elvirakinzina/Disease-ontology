@@ -1,0 +1,4 @@
+# Reason for admission: Valvular heart disease
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Prosthetic valve, Aortic stenosis (moderate, prostetic valve), Aortic regurgitation (grade 2-3)

@@ -1,0 +1,4 @@
+# Reason for admission: Valvular heart disease
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: AV-reentry tachycardia, Prosthetic aortic valve replacement (post Endocarditis) actual gradient=64mmHg 

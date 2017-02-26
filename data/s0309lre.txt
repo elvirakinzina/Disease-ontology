@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): inferior
+# Additional diagnoses: Ventricular fibrillation, Coronary artery disease, Arterial Hypertension, Mitral regurgitation (grade 2), Aortic valve regurgitation (grade 1)

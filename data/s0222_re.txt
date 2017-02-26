@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): inferior
+# Former infarction (localization): unknown
+# Additional diagnoses: Dilated Cardiomyopathy secondary to coronary artery disease, Diabetes mellitus, Obesity

@@ -1,0 +1,4 @@
+# Reason for admission: Valvular heart disease
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Mitral stenosis/regurgitation, Pulmonary fibrosis, Anemia

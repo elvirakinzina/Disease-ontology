@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): anterior (1), inferior (2)
+# Additional diagnoses: Recurrent sustained ventricular tachycardia, Arterial hypertension, Hyperlipoproteinemia Type IIa, Coronary artery disease, Cardioverter-Defibrillator

@@ -1,0 +1,4 @@
+# Reason for admission: Valvular heart disease
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Post rheumatic fever, Aortic valve regurgitation (grade1-2), Mitral regurgitation (grade 2), poor LV function

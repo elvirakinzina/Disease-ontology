@@ -1,0 +1,24 @@
+Task materials
+
+1. Disease ontology resources
+
+Main page:
+http://disease-ontology.org/
+Can be used for tree browsing and searching
+
+Alternative service for browsing and searching
+https://www.ebi.ac.uk/ols/ontologies/doid
+
+Download site:
+http://www.obofoundry.org/ontology/doid.html
+The OBO file is already included in data set supplied in file doid.obo. The
+OWL file is huge and will take more time to process/
+
+2. Possible services to be used for programmatic querying:
+
+API for online ontology querying:
+http://www.ebi.ac.uk/ols/docs/api - got to Search section. NOTE: you'll need
+to specify 'ontology=do' in query parameters.
+
+SPARQL query service at BioPortal:
+http://sparql.bioontology.org/

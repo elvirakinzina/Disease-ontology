@@ -1,0 +1,4 @@
+# Reason for admission: Heart failure (NYHA 3)
+# Acute infarction (localization): no
+# Former infarction (localization): unknown
+# Additional diagnoses: Coronary heart disease, Arterial hypertension

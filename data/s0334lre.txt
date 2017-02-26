@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): no
+# Former infarction (localization): infero-posterior
+# Additional diagnoses: Recurrent ventricular fibrillation, Arterial hypertension, Peripheral atherosclerosis, Cardioverter-Defibrillator (1993), postop. ACVB (1991), Mitral regurgitation grade II

@@ -1,0 +1,4 @@
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-lateral
+# Former infarction (localization): postero-lateral
+# Additional diagnoses: Gastric ulcers, Hyperglykemia

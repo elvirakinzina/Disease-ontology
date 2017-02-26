@@ -1,0 +1,4 @@
+# Reason for admission: Heart failure (NYHA 2)
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Arteriel hypertension, Diabetes mellitus, diabetic nephropathy, Basalioma
