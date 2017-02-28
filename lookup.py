@@ -2,10 +2,12 @@ import multiprocessing
 import requests
 import json
 from wiki_pubmed_fuzzy.ontology import get_ontology
-
+from gensim.models import word2vec, doc2vec
+from search_engine import *
 
 # TREE = get_ontology("../data/doid.obo")
-
+model_trigram = word2vec.Word2Vec.load('models/trigram_100features_10minwords_5context')
+model_doc2vec = doc2vec.Doc2Vec.load('models/doc2vec')
 
 def request_synonyms(oid, iri):
     j = requests.get('http://www.ebi.ac.uk/ols/api/ontologies/' + oid + '/terms?iri=' + iri).json()
@@ -54,7 +56,8 @@ def search(query):
     if (len(doid_exact_results) > 0):
         return {'query': query, 'exact_matches': doid_exact_results}
     else:
-        return {}
+        r = find_answer(query, model_trigram, model_doc2vec)[0]
+        return {'query': query, 'text': r}
         # doid_results = search_doid(query, False, doids)
         # other_results = search_others(query, doids)
         # return {'query': query, 'top_matches': doid_results, 'synonym_matches': other_results}
@@ -76,25 +79,31 @@ def parse(text):
 
 
 def format_response(r):
-    s = r['query'] + "\n"
+    s = ""
 
     if 'exact_matches' in r:
-        s += ("Exact match\n"
-               "Name: {0}\n"
-               "# {1}").format(r['exact_matches'][0]['label'], r['exact_matches'][0]['id'])
+        s += (
+             "Exact match\n" +
+             "Query: " + r['query'] + '\n'  +
+             "Name: {0}\n"
+             "# {1}").format(r['exact_matches'][0]['label'], r['exact_matches'][0]['id'])
     else:
-        s += "Best fuzzy match\n"
+        s += "Best fuzzy match\n" + r['text']
 
     return s
 
 
 def lookup(text):
-    pool = multiprocessing.Pool(15)
+    #try:
+
+    
 
     parsed = parse(text)
     strings = parsed['reason'] + parsed['additional']
 
-    results = pool.map(search, strings)
+        results = xmap(search, strings)
 
     for i in range(len(results)):
         yield format_response(results[i])
+    #except:
+    #    yield "Not found"

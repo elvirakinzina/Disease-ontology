@@ -9,9 +9,11 @@ def synonyms(query, model_trigram):
     for w in words:
         word += (w+'_')
     word = word[:-1]
-    
-    syns = model_trigram.similar_by_word(word)
-    syns = [syn[0] for syn in syns]
+    try:
+        syns = model_trigram.similar_by_word(word, topn=3)
+    except:
+        return []
+    syns = [syn[0].replace('_', ' ') for syn in syns]
     return syns
 
 def distance(query1, query2, model_doc2vec):
