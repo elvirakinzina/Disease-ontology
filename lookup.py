@@ -101,7 +101,7 @@ def lookup(text):
     parsed = parse(text)
     strings = parsed['reason'] + parsed['additional']
 
-        results = xmap(search, strings)
+    results = xmap(search, strings)
 
     for i in range(len(results)):
         yield format_response(results[i])
