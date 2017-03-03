@@ -3,3 +3,13 @@ gensim
 wikipedia
 biopython
 numpy
+graphviz
+fuzzywuzzy
+re
+
+
+
+
+
+
+

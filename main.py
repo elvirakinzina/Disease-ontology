@@ -20,9 +20,9 @@ def help(bot, update):
 def process(bot, update):
     for m in lookup(update.message.text):
         bot.sendMessage(update.message.chat_id, m)
-        if m.startswith("Best fuzzy match"):
+        #if m.startswith("Best fuzzy match"):
             #bot.sendMessage(update.message.chat_id, m)
-            bot.sendPhoto(update.message.chat_id, photo=open("test-output/round-table.gv.png", "rb"))
+        bot.sendPhoto(update.message.chat_id, photo=open("test-output/round-table.gv.png", "rb"))
             
 
 def error(bot, update, error):
